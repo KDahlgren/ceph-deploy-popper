@@ -1,4 +1,4 @@
-# skyhook-popper
+# ceph-deploy-popper
 
 ## Installation
 1. Install:
@@ -7,8 +7,8 @@
   - [base64](https://formulae.brew.sh/formula/base64)
   - [popper](https://github.com/systemslab/popper)
 2. Setup your CloudLab environment variables.
-3. `git clone https://github.com/KDahlgren/skyhook-popper.git`
-4. `cd skyhook-popper`
+3. `git clone https://github.com/KDahlgren/ceph-deploy-popper.git
+4. `cd ceph-deploy-popper`
 5. `popper run`
 
 
