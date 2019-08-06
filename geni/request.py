@@ -13,8 +13,8 @@ def baremetal_node(name, img, hardware_type):
 
 
 experiment_name = 'popper-test' + str( randint( 0, 9999) )
-#img = "urn:publicid:IDN+wisconsin.cloudlab.us+image+emulab-ops//UBUNTU18-64-STD"
-img = "urn:publicid:IDN+wisconsin.cloudlab.us+image+emulab-ops//ceph-deploy-4osds"
+img = "urn:publicid:IDN+wisconsin.cloudlab.us+image+emulab-ops//UBUNTU18-64-STD"
+#img = "urn:publicid:IDN+wisconsin.cloudlab.us+image+emulab-ops//ceph-deploy-4osds"
 
 request = pg.Request()
 request.addResource(baremetal_node("client0", img, 'c220g5'))
