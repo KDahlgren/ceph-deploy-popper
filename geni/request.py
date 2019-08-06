@@ -20,8 +20,8 @@ request = pg.Request()
 request.addResource(baremetal_node("client0", img, 'c220g5'))
 request.addResource(baremetal_node("osd0", img, 'c220g5'))
 request.addResource(baremetal_node("osd1", img, 'c220g5'))
-request.addResource(baremetal_node("osd2", img, 'c220g5'))
-request.addResource(baremetal_node("osd3", img, 'c220g5'))
+#request.addResource(baremetal_node("osd2", img, 'c220g5'))
+#request.addResource(baremetal_node("osd3", img, 'c220g5'))
 
 # load context
 ctx = util.loadContext(key_passphrase=os.environ['GENI_KEY_PASSPHRASE'])
@@ -34,7 +34,8 @@ manifest = util.createSliver(ctx, cloudlab.Wisconsin, experiment_name, request)
 
 # grouping inventory
 groups = {
-  'osds': ['osd0','osd1','osd2','osd3'],
+  #'osds': ['osd0','osd1','osd2','osd3'],
+  'osds': ['osd0','osd1'],
   'clients': ['client0']
 }
 
